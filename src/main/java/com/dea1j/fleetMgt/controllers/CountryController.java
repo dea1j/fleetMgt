@@ -7,8 +7,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class CountryController {
     @GetMapping("/countries")
-    public String getCountries(Model model) {
-        model.addAttribute("dfd");
+    public String getCountries() {
         return "country";
     }
 }
